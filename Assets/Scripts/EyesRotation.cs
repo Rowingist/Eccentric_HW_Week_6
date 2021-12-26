@@ -3,7 +3,7 @@ using UnityEngine;
 public class EyesRotation : MonoBehaviour
 {
     [SerializeField] private Aim _aim;
-    [SerializeField, Range(10f, 150f)] private float _rotationAngleRange = 120f;
+    [SerializeField, Range(10f, 50f)] private float _rotationAngleRange = 40f;
 
     private float _yAimOffset, _interpoler;
     private Quaternion _eyesUp, _eyesDown;
