@@ -29,6 +29,6 @@ public class EyesRotation : MonoBehaviour
         _interpoler = Mathf.InverseLerp(-2f, 2f, _yAimOffset);
         _eyesUp = Quaternion.Euler(_rotationAngleRange, 0f, 0f);
         _eyesDown = Quaternion.Euler(-_rotationAngleRange, 0f, 0f);
-        transform.localRotation = Quaternion.Lerp(_eyesDown, _eyesUp, _interpoler);
+        transform.localRotation = Quaternion.Lerp(_eyesUp, _eyesDown, _interpoler);
     }
 }
