@@ -151,6 +151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 610509965}
   - {fileID: 351284317}
   m_Father: {fileID: 1655201368}
   m_RootOrder: 3
@@ -164,7 +165,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 97d272ce813a25446a8a72c721c72a6f, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 97d272ce813a25446a8a72c721c72a6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -232,6 +233,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97d272ce813a25446a8a72c721c72a6f, type: 3}
+--- !u!1001 &290413889
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 81974892}
+    m_Modifications:
+    - target: {fileID: 130620, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_Name
+      value: SmokeWhiteSoftTrail Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0343
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
 --- !u!1 &351284316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 97d272ce813a25446a8a72c721c72a6f, type: 3}
@@ -522,6 +580,16 @@ Transform:
   m_Father: {fileID: 914986619}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &610509965 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 437806, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+  m_PrefabInstance: {fileID: 290413889}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &610509967 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19884158, guid: 300b9456fa5fc88459ea6ccc155ed3f0, type: 3}
+  m_PrefabInstance: {fileID: 290413889}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &686374285
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,6 +784,7 @@ MonoBehaviour:
   _shootSound: {fileID: 872669381}
   _flash: {fileID: 351284316}
   _hitSounds: {fileID: 872669382}
+  _smokeTrail: {fileID: 610509967}
 --- !u!82 &872669381
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1085,7 +1154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983645836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.191, z: 0.06}
+  m_LocalPosition: {x: 0, y: -0.1844, z: 0.0565}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1107,7 +1176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _aim: {fileID: 1168673789}
-  _rotationAngleRange: 120
+  _rotationAngleRange: 40
 --- !u!1 &1168673785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,6 +1707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CowboyHat
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012935396974, guid: 9f7c47effbb7cac46b1d8f18dad8fd9a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011809726002, guid: 9f7c47effbb7cac46b1d8f18dad8fd9a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1890,7 +1963,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8164829923936755650}
   m_LocalRotation: {x: 0.7071068, y: -0.000000021073427, z: -0.000000021073426, w: 0.70710677}
-  m_LocalPosition: {x: 0.0705996, y: 0.008337945, z: -0.0035039485}
+  m_LocalPosition: {x: 0.07059978, y: 0.0017379522, z: 0}
   m_LocalScale: {x: 1.4691012, y: 1.4691012, z: 1.4691012}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1905,7 +1978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5541210387204086872}
   m_LocalRotation: {x: 0.7071068, y: -0.000000021073427, z: -0.000000021073426, w: 0.70710677}
-  m_LocalPosition: {x: -0.0701457, y: 0.008337945, z: -0.0035039485}
+  m_LocalPosition: {x: -0.070145875, y: 0.0017379522, z: 0}
   m_LocalScale: {x: 1.4691012, y: 1.4691012, z: 1.4691012}
   m_ConstrainProportionsScale: 0
   m_Children: []
