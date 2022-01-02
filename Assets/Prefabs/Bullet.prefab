@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4480891266921225811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3147554, y: 2.0229895, z: 1.072}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _effectPrefab: {fileID: 1602197966606650, guid: 639ffe8a2dcaab14fa53988d89810e9d, type: 3}
   _hitSound: {fileID: 1461720004300005045}
+  _henAudioSource: {fileID: 8300000, guid: a114cee7fd5a33e4294e2a21d1a37e9e, type: 3}
 --- !u!114 &1461720004300005045
 MonoBehaviour:
   m_ObjectHideFlags: 0
